@@ -1,0 +1,81 @@
+:root {
+    --red: #ea5e5e;
+    --yellow: #f7ba3e;
+    --green: #56b3b4;
+    --blue: #4b98c1;
+    --purple: #bf85bf;
+}
+
+
+/*?  ********************/
+
+
+/** Sizes of the cells **/
+
+
+/*?  ********************/
+
+.cell.size-2 {
+    --size: 2;
+}
+
+.cell.size-3 {
+    --size: 3;
+}
+
+.cell.size-4 {
+    --size: 4;
+}
+
+.cell.size-5 {
+    --size: 5;
+}
+
+.cell.size-6 {
+    --size: 6;
+}
+
+.cell.size-7 {
+    --size: 7;
+}
+
+.cell.size-8 {
+    --size: 8;
+}
+
+.cell.size-9 {
+    --size: 9;
+}
+
+.cell.size-10 {
+    --size: 10;
+}
+
+
+/*?  ********************/
+
+
+/** Colors of the cells **/
+
+
+/*?  ********************/
+
+.cell.red {
+    background-color: var(--red);
+}
+
+.cell.yellow {
+    background-color: var(--yellow);
+}
+
+.cell.green {
+    background-color: var(--green);
+}
+
+.cell.blue {
+    background-color: var(--blue);
+}
+
+.cell.purple {
+    background-color: var(--purple);
+}

@@ -1,0 +1,80 @@
+.row {
+    translate: var(--offset);
+    animation: load-row 1s calc(var(--delay) * 100ms + 500ms) forwards;
+}
+
+.row:nth-child(1) {
+    --delay: 1;
+    --offset: 150px;
+}
+
+.row:nth-child(2) {
+    --delay: 2;
+    --offset: -100px;
+}
+
+.row:nth-child(3) {
+    --delay: 3;
+    --offset: 200px;
+}
+
+.row:nth-child(4) {
+    --delay: 4;
+    --offset: 50px;
+}
+
+.row:nth-child(5) {
+    --delay: 5;
+    --offset: -100px;
+}
+
+.row:nth-child(6) {
+    --delay: 6;
+    --offset: -150px;
+}
+
+.row:nth-child(7) {
+    --delay: 7;
+    --offset: 50px;
+}
+
+.row:nth-child(8) {
+    --delay: 8;
+    --offset: -250px;
+}
+
+.row:nth-child(9) {
+    --delay: 9;
+    --offset: 100px;
+}
+
+.row:nth-child(10) {
+    --delay: 10;
+    --offset: 200px;
+}
+
+.row:nth-child(11) {
+    --delay: 11;
+    --offset: -50px;
+}
+
+.row:nth-child(12) {
+    --delay: 12;
+    --offset: 150px;
+}
+
+.row:nth-child(13) {
+    --delay: 13;
+    --offset: -100px;
+}
+
+.row:nth-child(14) {
+    --delay: 14;
+    --offset: 150px;
+}
+
+@keyframes load-row {
+    100% {
+        translate: 0;
+    }
+}

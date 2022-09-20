@@ -1,0 +1,174 @@
+@import url("cell-size-color.css");
+@import url("row-animation.css");
+@import url("../src/Cyberpunk/Cyberpunk.ttf");
+@import url("http://fonts.cdnfonts.com/css/matrix");
+@import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+:root {
+    --gray: #465862;
+    --background: #1a2b34;
+    --unit: 10px;
+    --cell-radius: 1000px;
+    --font-color: white;
+    --M: "orbitron";
+}
+
+body {
+    /* width: 100vh; */
+    background: var(--background);
+    font-family: "roboto";
+}
+
+header {
+    height: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    color: var(--font-color);
+}
+
+h1 {
+    font-family: var(--M);
+}
+
+ul {
+    display: flex;
+}
+
+li {
+    list-style: none;
+    margin-left: 2rem;
+}
+
+button {
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+}
+
+#prettier {
+    font-family: "orbitron", sans-serif;
+    background-color: #1a2b34;
+    border: none;
+}
+
+#prettier:hover {
+    border: 1px solid #bf85bf;
+    animation: p-shadow 0.3s cubic-bezier(0.47, 0, 0.745, 0.715) both;
+}
+
+@keyframes p-shadow {
+    0% {
+        box-shadow: 0 0 #bf85bf, 0 0 #bf85bf, 0 0 #bf85bf, 0 0 #bf85bf, 0 0 #bf85bf;
+        transform: translateX(0) translateY(0);
+    }
+    100% {
+        box-shadow: 1px -1px #bf85bf, 2px -2px #bf85bf, 3px -3px #bf85bf, 4px -4px #bf85bf, 5px -5px #bf85bf;
+        transform: translateX(-5px) translateY(5px);
+    }
+}
+
+#matrix {
+    font-family: "matrix", sans-serif;
+    color: #00b700;
+    background-color: black;
+    border: none;
+}
+
+#matrix:hover {
+    border: 1px solid #00b700;
+    animation: m-shadow 0.3s cubic-bezier(0.47, 0, 0.745, 0.715) both;
+}
+
+@keyframes m-shadow {
+    0% {
+        box-shadow: 0 0 #00b700, 0 0 #00b700, 0 0 #00b700, 0 0 #00b700, 0 0 #00b700;
+        transform: translateX(0) translateY(0);
+    }
+    100% {
+        box-shadow: 1px -1px #00b700, 2px -2px #00b700, 3px -3px #00b700, 4px -4px #00b700, 5px -5px #00b700;
+        transform: translateX(-5px) translateY(5px);
+    }
+}
+
+#cyberpunk {
+    font-family: "cyberpunk", sans-serif;
+    color: #fcee0a;
+    background-color: #3c373d;
+    border: none;
+}
+
+#cyberpunk:hover {
+    border: 1px solid #fcee0a;
+    animation: c-shadow 0.3s cubic-bezier(0.47, 0, 0.745, 0.715) both;
+}
+
+@keyframes c-shadow {
+    0% {
+        box-shadow: 0 0 #fcee0a, 0 0 #fcee0a, 0 0 #fcee0a, 0 0 #fcee0a, 0 0 #fcee0a;
+        transform: translateX(0) translateY(0);
+    }
+    100% {
+        box-shadow: 1px -1px #fcee0a, 2px -2px #fcee0a, 3px -3px #fcee0a, 4px -4px #fcee0a, 5px -5px #fcee0a;
+        transform: translateX(-5px) translateY(5px);
+    }
+}
+
+#light {
+    font-family: "orbitron", sans-serif;
+    background-color: white;
+    border: none;
+}
+
+#light:hover {
+    border: 1px solid #ea5e5e;
+    animation: l-shadow 0.3s cubic-bezier(0.47, 0, 0.745, 0.715) both;
+}
+
+@keyframes l-shadow {
+    0% {
+        box-shadow: 0 0 #ea5e5e, 0 0 #ea5e5e, 0 0 #ea5e5e, 0 0 #ea5e5e, 0 0 #ea5e5e;
+        transform: translateX(0) translateY(0);
+    }
+    100% {
+        box-shadow: 1px -1px #ea5e5e, 2px -2px #ea5e5e, 3px -3px #ea5e5e, 4px -4px #ea5e5e, 5px -5px #ea5e5e;
+        transform: translateX(-5px) translateY(5px);
+    }
+}
+
+input {
+    margin-right: 1rem;
+}
+
+.fuck {
+    height: 100vh;
+    background-image: url("../src/Light_Yagami.jpg") no-repeat;
+}
+
+.tag {
+    height: calc(100vh - 10rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tag .container {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: var(--unit);
+}
+
+.tag .container .row {
+    height: var(--unit);
+    display: flex;
+    justify-content: center;
+    gap: var(--unit);
+}
+
+.cell {
+    height: 100%;
+    width: calc(var(--size, 2) * var(--unit));
+    background-color: var(--gray);
+    border-radius: var(--cell-radius);
+}
