@@ -140,11 +140,6 @@ input {
     margin-right: 1rem;
 }
 
-.fuck {
-    height: 100vh;
-    background-image: url("../src/Light_Yagami.jpg") no-repeat;
-}
-
 .tag {
     height: calc(100vh - 10rem);
     display: flex;
